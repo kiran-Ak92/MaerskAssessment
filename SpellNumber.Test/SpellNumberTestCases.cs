@@ -13,6 +13,7 @@ namespace SpellNumber.Test
             var ActualOutput= NumberToStringConverter.ConvertString2Number(input);
             Assert.AreEqual(expectOutput.Trim().ToLower().ToString(), ActualOutput.Trim().ToLower().ToString());
             //return true;
+            //tested
         }
         [TestMethod]
         public void ConvertString2Number_TwoDigit_ReturnString()
