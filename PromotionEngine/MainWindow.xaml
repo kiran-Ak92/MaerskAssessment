@@ -1,0 +1,33 @@
+﻿<Window x:Class="PromotionEngine.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PromotionEngine"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800">
+    <Grid>
+        <Button Content="SKU - A"  Click="SKU_A_Click" HorizontalAlignment="Left" Margin="78,81,0,0" VerticalAlignment="Top" Width="107" FontSize="15" FontWeight="Bold" Background="SeaGreen" Height="43"/>
+        <Button Content="SKU - B"  Click="SKU_B_Click" HorizontalAlignment="Left" Margin="223,81,0,0" VerticalAlignment="Top" Width="107" FontSize="15" FontWeight="Bold" Background="SeaGreen" Height="43"/>
+        <Button Content="SKU - C"  Click="SKU_C_Click" HorizontalAlignment="Left" Margin="385,81,0,0" VerticalAlignment="Top" Width="107" FontSize="15" FontWeight="Bold" Background="SeaGreen" Height="43"/>
+        <Button Content="SKU - D"  Click="SKU_D_Click" HorizontalAlignment="Left" Margin="568,81,0,0" VerticalAlignment="Top" Width="107" FontSize="15" FontWeight="Bold" Background="SeaGreen" Height="43"/>
+        <TextBox Name="Aval" IsReadOnly="True" Text="0" HorizontalAlignment="Left" Height="40" Margin="122,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="63"/>
+        <TextBox Name="Bval" IsReadOnly="True" Text="0" HorizontalAlignment="Left" Height="40" Margin="269,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61"/>
+        <TextBox Name="Cval" IsReadOnly="True" Text="0" HorizontalAlignment="Left" Height="40" Margin="437,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55"/>
+        <TextBox Name="Dval" IsReadOnly="True" Text="0" HorizontalAlignment="Left" Height="40" Margin="627,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
+        <Label Content="Welcome to Maersk Promotion Engine" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="192,22,0,0" VerticalAlignment="Top" Width="406" Height="40"/>
+        <Button Content="-" Click="A_Ls_Click" Background="Red" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="78,172,0,0" VerticalAlignment="Top" Width="39" Height="40"/>
+        <Button Content="-" Click="B_Ls_Click" Background="Red" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="225,172,0,0" VerticalAlignment="Top" Width="39" Height="40"/>
+        <Button Content="-" Click="C_Ls_Click" Background="Red" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="385,172,0,0" VerticalAlignment="Top" Width="39" Height="40"/>
+        <Button Content="-" Click="D_Ls_Click" Background="Red" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="583,172,0,0" VerticalAlignment="Top" Width="39" Height="40"/>
+        <Button Content="Check Out" Click="CheckOut_Click" HorizontalAlignment="Left" Margin="330,244,0,0" VerticalAlignment="Top" Background="BurlyWood" FontSize="15" FontWeight="Bold" FontFamily="helvetica"  Width="94" Height="32"/>
+        <Label Content="" Name="Aorder" HorizontalAlignment="Left" Margin="147,285,0,0" VerticalAlignment="Top" Width="364"/>
+        <Label Content="" x:Name="Border" HorizontalAlignment="Left" Margin="147,316,0,0" VerticalAlignment="Top" Width="364"/>
+        <Label Content="" x:Name="Corder" HorizontalAlignment="Left" Margin="147,347,0,0" VerticalAlignment="Top" Width="364"/>
+        <Label Content="" x:Name="Dorder" HorizontalAlignment="Left" Margin="147,378,0,0" VerticalAlignment="Top" Width="364"/>
+        <Label Content="-------------------------------------------------------------------------------------" x:Name="nulo" HorizontalAlignment="Left" Margin="134,404,0,0" VerticalAlignment="Top" Width="430"/>
+        <Label Content="Total" x:Name="totlbl" FontSize="12" FontWeight="Bold" HorizontalAlignment="Left" Margin="147,430,0,0" VerticalAlignment="Top" Width="71"/>
+        <Label Content="" x:Name="TotalOrder" FontSize="12" FontWeight="Bold" HorizontalAlignment="Left" Margin="269,430,0,0" VerticalAlignment="Top" Width="183"/>
+
+    </Grid>
+</Window>
